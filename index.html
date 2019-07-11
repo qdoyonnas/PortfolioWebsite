@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quentin Doyonnas Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body onload="AddSlideshows(); ShowPage('home');">
+
+	<div class="container">
+
+		<div class="header-content">
+			<div class="navigation">
+				<a href="#" onclick="ShowPage('home')"><h1>Home</h1></a>
+				<a href="#" onclick="ShowPage('projects')"><h1>Projects</h1></a>
+			</div>
+			
+			<div class="banner">
+				<h1>Quentin Doyonnas</h1>
+				<p>Game Developer and Designer</p>
+			</div>
+			
+			<div class="navigation">
+				<a href="#" onclick="ShowPage('resume')"><h1>Resume</h1></a>
+				<a href="#" onclick="ShowPage('contact')"><h1>Contact</h1></a>
+			</div>
+		</div>
+		
+		<div class="content home-content">
+			<h1 style="text-align: center">Home</h1>
+			<p>Welcome to my portfolio!</p><p>My name is <b>Quentin Doyonnas</b> and I am a video game developer. I have loved video games for as long as I can remember.
+			I have always had a great passion for the <b>stories</b> they tell, the <b>emotions</b> they evoke, and how they <b>connect</b> people who otherwise might have nothing in common. 
+			When I was 10 years old, I decided I would spend my life making games. Then at 12 years old I taught myself some, rudimentary, Python programming and wrote my first game, <b>Destroyer Command</b>.</p>
+			<p>From there I continued to explore games, learned more programming taking elective classes and extracurricular courses. I wrote game docs, filling notebooks and hard drives and tried where I could to realize my dreams.
+			I made more games in my spare time, and eventually started my higher education in the same pursuit. Some years later, I graduated with a <b>Bachelor's of Science in Video Game Development.</b></p>
+		</div>
+		
+		<div class="content projects-content">
+			<div class="project">
+				<div class="text" style="padding-right: 10px; width: 40%;">
+					<p>Here are some of the projects I have made over the course of my education and career. Some of these projects were the result of assignments and many were the result of personal motivations</p>
+				</div>
+			
+				<div id="gallery1" class="slideshow" style="width: 60%;">
+					<div class="slides fade">
+						<a href="#"><img src="Images/game_image1.png"></a>
+						<div class="caption">Image 1 Caption</div>
+					</div>
+					
+					<div class="slides fade">
+						<a href="#"><img src="Images/game_image2.png"></a>
+						<div class="caption">Image 2 Caption</div>
+					</div>
+					
+					<div class="slides fade">
+						<a href="#"><img src="Images/game_image3.png"></a>
+						<div class="caption">Image 3 Caption</div>
+					</div>
+					
+					<a class="previous_arrow" onclick="PlusSlides('gallery1', -1)">&#10094;</a>
+					<a class="next_arrow" onclick="PlusSlides('gallery1', 1)">&#10095;</a>
+				</div>
+				
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('project1_content')">PROJECT 1
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div id="project1_content">
+					<div id="project1_gallery" class="slideshow" style="width: 60%;">
+						<div class="slides fade">
+							<a href="#"><img src="Images/game_image1.png"></a>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#"><img src="Images/game_image2.png"></a>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#"><img src="Images/game_image3.png"></a>
+						</div>
+						
+						<a class="previous_arrow" onclick="PlusSlides('project1_gallery', -1)">&#10094;</a>
+						<a class="next_arrow" onclick="PlusSlides('project1_gallery', 1)">&#10095;</a>
+					</div>
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>This is the first project</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content resume-content">
+			<h1 style="text-align: center">Resume</h1>
+			<h2>SUMMARY OF SKILLS</h2>
+			<p>Experienced software developer and avid gamer with strong skills in C#, C++, Python, and HTML. Able to quickly learn and apply new training and technologies.  Friendly, positive employee who collaborates well with a dynamic team. Self-taught programming at age 12 before taking classes. Excellent written and verbal communication skills. </p>
+			
+			<div class="table-container">
+				<div>
+					<table>
+						<tr>
+							<th colspan="4">Programming</th>
+						</tr>
+						<tr>
+							<td>HTML</td>
+							<td>Javascript</td>
+							<td>Python</td>
+							<td>PHP</td>
+						</tr>
+						<tr>
+							<td>ASP.net</td>
+							<td>C++</td>
+							<td>CLI</td>
+							<td>C#</td>
+						</tr>
+						<tr>
+							<td>Ruby</td>
+							<td>SQL</td>
+							<td>Typescript</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+					<table>
+						<tr>
+							<th colspan="4">Math</th>
+						</tr>
+						<tr>
+							<td>Algrebra</td>
+							<td>Geometry</td>
+							<td>Trigonometry</td>
+						</tr>
+						<tr>
+							<td>Linear Algebra</td>
+							<td>Probability</td>
+							<td>Calculus</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<ul>
+				<li><b>Fluent in English and French</b></li>
+				<li>International experience in living in France, England, Canada and the US</li>
+				<li>Elementary School in Canada, Middle School in California, High School in Connecticut</li>
+			</ul>
+			
+			<h2>EDUCATION</h2>
+			<table style="width: 100%">
+				<tr>
+					<td>New England Institute of Technology, Greenwich RI</td>
+					<td style="text-align: right">2014 - March 2019</td>
+				</tr>
+				<tr>
+					<td><b style="margin-left: 32px;">Bachelor of Science</b> degree in Video Game Development</td>
+				</tr>
+				<tr>
+					<td><b style="margin-left: 32px;">GPA: 3.28, Dean's List multiple quarters in school</b></td>
+				</tr>
+				
+				<tr><td><br></td></tr>
+				<tr>
+					<td>University of Advancing Technology</td>
+					<td style="text-align: right">2012-2014</td>
+				</tr>
+				
+				<tr><td><br></td></tr>
+				<tr>
+					<td>Stonington High School</td>
+					<td style="text-align: right">2011</td>
+				</tr>
+			</table>
+			
+			<h2>PROFFESIONAL EXPERIENCE</h2>
+			<table style="width: 100%">
+				<tr>
+					<td><b><u>Web, Database and Mobile Developer</u></b>, Tapcentive - Telecommute</td>
+					<td style="text-align: right">April 2014 - August 2018</td>
+				</tr>
+				<tr>
+					<td><ul style="margin: 0">
+						<li>Collaborated virtually with California based team, setting own schedule in order to complete assignments, and accurately recording and reporting hours.</li>
+						<li>Developed website using HTML/CSS/JQUERY. Rapidly learned and applied new skills including: working with NGINX, Bootstrap.js, Git, MongoDB, Underscore.js.</li>
+						<li>Worked on Android side, working on end-to-end connectivity using Ionic and Cordova.</li>
+						<li>Switched between multiple programming environments including Python venv, Node.js and Django.</li>
+					</ul></td>
+				</tr>
+			</table>
+			
+			<h2>PROJECTS</h2>
+			<table style="width: 100%">
+				<tr>
+					<td><b><u>Cyberwar Simulation</u></b>, New England Naval War College - Contract</td>
+					<td style="text-align: right">May 2017</td>
+				</tr>
+				<tr>
+					<td><ul style="margin: 0">
+						<li>Small team prototype creation of Cyberwar Simulation for use in training officers at Naval War College.</li>
+						<li>Open-ended research and development project, designing and developing of prototype to employer specifications.</li>
+						<li>Re-iteration process from employer feedback for tailored final product.</li>
+					</ul></td>
+				</tr>
+				
+				<tr><td><br></td></tr>
+				<tr>
+					<td><b><u>Additional Projects</u></b></td>
+				</tr>
+				<tr>
+					<td><ul style="margin: 0">
+						<li>Bachelor's Final Project – VR action game</li>
+						<li>Incantorium – VR Puzzle game</li>
+						<li>Epic Punch Through – Unity based Personal project</li>
+						<li>Destroyer Command – Initially Pygame project, self-taught Python</li>
+						<li>Multiple <b>Game Jams</b></li>
+					</ul></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="content contact-content">
+			<h1>Contact Info</h1>
+			<p><b>Email: </b>qdoyonnas@gmail.com</p>
+			<p><b>Phone: </b>(860)694-9114</p>
+			<a href="https://www.linkedin.com/in/quentin-doyonnas-05a924b2" target="_blank"><img src="Images/LinkedIn_logo.png" width=64></a>
+			<a href="https://github.com/qdoyonnas?tab=repositories" target="_blank"><img src="Images/github-icon-png-29.jpg" width=64></a>
+		</div>
+		
+		<div class="bottom-navigation">
+			<a href="#" onclick="ShowPage('home')"><p>Home</p></a>
+			<a href="#" onclick="ShowPage('projects')"><p>Projects</p></a>
+			<a href="#" onclick="ShowPage('resume')"><p>Resume</p></a>
+			<a href="#" onclick="ShowPage('contact')"><p>Contact</p></a>
+		</div>
+		
+	</div>
+		
+</body>
+</html>

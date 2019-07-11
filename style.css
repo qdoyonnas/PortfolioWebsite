@@ -1,0 +1,311 @@
+@font-face {
+	font-family: "TechnaSans";
+	src: url("Fonts/TechnaSans-Regular.otf") format("opentype");
+}
+
+body {
+	background-image: url("Images/GreyStripes.jpg");
+	background-color: #333333;
+	color: #aaaaaa;
+	
+	font-family: 'TechnaSans', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	
+	min-width: 800px;
+}
+
+b {
+	color: #bd8400;
+}
+
+.container {
+	min-width: 900px;
+}
+
+.header-content {
+	position: relative;
+	
+	height: 160px;
+}
+
+.banner {
+	float: left;
+	position: relative;
+	width: 33%;
+	
+	margin: auto;
+	padding: 10px;
+	
+	text-align: center;
+	background-color: #111111;
+	
+	border-style: solid;
+	border-color: #bd8400;
+	border-width: 2px;
+	border-radius: 4px;
+}
+
+.banner h1 {
+	font-size: 36px;
+}
+
+.navigation {
+	float: left;
+	position: relative;
+	width: 32%;
+	height: 57px;
+	
+	margin: 0;
+	padding: 0;
+	
+	text-align: center;
+	background-color: #111111;
+	
+	border-bottom-style: solid;
+	border-bottom-color: #bd8400;
+	border-bottom-width: 2px;
+}
+
+.navigation div {
+	float: left;
+	
+	width: 50%;
+	height: 57px;
+	box-sizing: border-box;
+	
+	padding: 10px 0 10px 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	
+	border-bottom-style: none;
+}
+
+.navigation h1 {
+	margin: 0;
+	padding: 0;
+	
+	float: left;
+	
+	width: 50%;
+	height: 57px;
+	box-sizing: border-box;
+	
+	padding: 10px 0 10px 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	
+	border-bottom-style: none;
+}
+
+a {
+	color: inherit;
+}
+a:link {
+	color: inherit;
+}
+a:hover {
+	color: #ffffff;
+}
+
+.content {
+	position: relative;
+	width: 80%;
+	box-sizing: border-box;
+	
+	padding: 10px;
+	margin: auto;
+	
+	background-color: #111111;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.projects-content {
+	position: relative;
+	width: 80%;
+	box-sizing: border-box;
+	
+	padding: 0;
+	margin: auto;
+	
+	background-color: transparent;
+	border-style: none;
+}
+
+.project {
+	background-color: #111111;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	
+	margin-bottom: 50px;
+	
+	padding: 10px;
+}
+
+.project h1 {
+	position: relative;
+	cursor: pointer;
+	color: #bd8400;
+	text-align: center;
+	
+	margin: 0 0 10px 0;
+	
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #bd8400;
+}
+
+.project h1:hover {
+	background-color: #333333;
+}
+
+.project .collapse_arrow {
+	position: absolute;
+	top: 0;
+	width: auto;
+	margin-top: -6px;
+}
+
+.project .collapse_arrow.right {
+	right: 0;
+}
+
+.slideshow{
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.slides {
+	display: none;
+}
+
+.slides img {
+	box-sizing: border-box;
+	width: 100%;
+	
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.slideshow .previous_arrow, .slideshow .next_arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next_arrow {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.previous_arrow:hover, .next_arrow:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+.project .text {
+	box-sizing: border-box;
+	float: left;
+	margin: 0;
+}
+
+.caption {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	width: 100%;
+	text-align: center;
+}
+
+.resume-content h2 {
+	color: #bd8400;
+	background-color: #222222;
+	
+	padding-left: 5px;
+}
+
+.resume-content .table-container {
+	height: 134px;
+}
+
+.resume-content .table-container div {
+	float:left;
+	margin: 0 10px 0 10px;
+	height: 134px;
+	
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.resume-content .table-container div table {
+	border-spacing: 10px;
+	width: 50%;
+}
+
+.contact-content {
+	text-align: center;
+}
+
+.bottom-navigation {
+	position: relative;
+	top: 30px;
+	margin: auto;
+	
+	box-sizing: border-box;
+	width: 80%;
+	
+	border-top-style: solid;
+	border-top-color: #bd8400;
+	border-top-width: 2px;
+}
+
+.bottom-navigation p {
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0;
+	
+	text-align: center;
+	
+	background-color: #111111;
+	
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	
+	border-top-style: none;
+}
