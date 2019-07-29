@@ -124,6 +124,11 @@ a:hover {
 	border-width: 2px;
 }
 
+.home-content img {
+	border: solid 2px black;
+	margin: 10px;
+}
+
 .projects-content {
 	position: relative;
 	width: 80%;
@@ -147,6 +152,10 @@ a:hover {
 	padding: 10px;
 }
 
+.project_body {
+	padding: 4%;
+}
+
 .project h1 {
 	position: relative;
 	cursor: pointer;
@@ -158,6 +167,10 @@ a:hover {
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
 	border-bottom-color: #bd8400;
+}
+
+.project a {
+	color: #bd8400;
 }
 
 .project h1:hover {
@@ -192,6 +205,10 @@ a:hover {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+}
+
+.slide img:hover {
+	border: solid 2px #bd8400;
 }
 
 .slideshow .previous_arrow, .slideshow .next_arrow {
@@ -235,6 +252,14 @@ a:hover {
 	to {opacity: 1}
 }
 
+.project > div > img {
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	
+	border: solid 2px black;
+}
+
 .project .text {
 	box-sizing: border-box;
 	float: left;
@@ -243,7 +268,7 @@ a:hover {
 
 .caption {
 	color: #f2f2f2;
-	font-size: 15px;
+	font-size: 24px;
 	padding: 8px 12px;
 	width: 100%;
 	text-align: center;

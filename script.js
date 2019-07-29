@@ -31,10 +31,6 @@ function AddSlideshows()
 	slideIndexes.gallery1 = 1;
 	slideTimers.gallery1 = 0;
 	ShowSlides('gallery1', 1);
-	
-	slideIndexes.project1_gallery = 1;
-	slideTimers.project1_gallery = 0;
-	ShowSlides('project1_gallery', 1);
 }
 
 // Next/previous controls
@@ -60,7 +56,7 @@ function ShowSlides(id, n)
 	slideIndexes[id] = slideIndex;
 	
 	clearTimeout(slideTimers[id]);
-	slideTimers[id] = setTimeout(function() { ShowSlides(id, slideIndexes[id] += 1); }, 1750);
+	slideTimers[id] = setTimeout(function() { ShowSlides(id, slideIndexes[id] += 1); }, 2500);
 }
 
 function ToggleContent(id)
@@ -72,4 +68,14 @@ function ToggleContent(id)
 	} else {
 		content.show();
 	}
+	
+	content[0].scrollIntoView();
+}
+function ShowContent(id)
+{
+	var content = $("#" + id);
+	
+	content.show();
+	
+	content[0].scrollIntoView();
 }

@@ -28,80 +28,371 @@
 			</div>
 		</div>
 		
-		<div class="content home-content">
+		<div class="content home-content" style="display: none">
+			<img src="Images/picture_1.jpg" width="20%" style="float: left;">
 			<h1 style="text-align: center">Home</h1>
 			<p>Welcome to my portfolio!</p><p>My name is <b>Quentin Doyonnas</b> and I am a video game developer. I have loved video games for as long as I can remember.
 			I have always had a great passion for the <b>stories</b> they tell, the <b>emotions</b> they evoke, and how they <b>connect</b> people who otherwise might have nothing in common. 
 			When I was 10 years old, I decided I would spend my life making games. Then at 12 years old I taught myself some, rudimentary, Python programming and wrote my first game, <b>Destroyer Command</b>.</p>
 			<p>From there I continued to explore games, learned more programming taking elective classes and extracurricular courses. I wrote game docs, filling notebooks and hard drives and tried where I could to realize my dreams.
 			I made more games in my spare time, and eventually started my higher education in the same pursuit. Some years later, I graduated with a <b>Bachelor's of Science in Video Game Development.</b></p>
+			<img src="Images/neit_1.jpg" width="50%" style="float: right;">
+			
+			<div style="clear: both;"></div>
 		</div>
 		
-		<div class="content projects-content">
+		<div class="content projects-content" style="display: none">
+		
 			<div class="project">
-				<div class="text" style="padding-right: 10px; width: 40%;">
-					<p>Here are some of the projects I have made over the course of my education and career. Some of these projects were the result of assignments and many were the result of personal motivations</p>
-				</div>
-			
-				<div id="gallery1" class="slideshow" style="width: 60%;">
-					<div class="slides fade">
-						<a href="#"><img src="Images/game_image1.png"></a>
-						<div class="caption">Image 1 Caption</div>
+				<div>
+					<div class="text" style="padding-right: 10px; width: 40%;">
+						<p>Here are some of the projects I have made over the course of my education and career. Some of these projects were the result of assignments and many were the result of personal motivations</p>
 					</div>
-					
-					<div class="slides fade">
-						<a href="#"><img src="Images/game_image2.png"></a>
-						<div class="caption">Image 2 Caption</div>
-					</div>
-					
-					<div class="slides fade">
-						<a href="#"><img src="Images/game_image3.png"></a>
-						<div class="caption">Image 3 Caption</div>
-					</div>
-					
-					<a class="previous_arrow" onclick="PlusSlides('gallery1', -1)">&#10094;</a>
-					<a class="next_arrow" onclick="PlusSlides('gallery1', 1)">&#10095;</a>
-				</div>
 				
-				<div style="clear: both;"></div>
-			</div>
-			
-			<div class="project">
-				<h1 onclick="ToggleContent('project1_content')">PROJECT 1
-					<div class="collapse_arrow">&#9660;</div>
-					<div class="collapse_arrow right">&#9660;</div>
-				</h1>
-			
-				<div id="project1_content">
-					<div id="project1_gallery" class="slideshow" style="width: 60%;">
+					<div id="gallery1" class="slideshow" style="width: 60%;">
 						<div class="slides fade">
-							<a href="#"><img src="Images/game_image1.png"></a>
+							<a href="#ept_content" onclick="ShowContent('incantorium_content')"><img src="Images/incantorium_1.jpg"></a>
+							<div class="caption">Incantorium (VR)</div>
 						</div>
-						
-						<div class="slides fade">
-							<a href="#"><img src="Images/game_image2.png"></a>
-						</div>
-						
-						<div class="slides fade">
-							<a href="#"><img src="Images/game_image3.png"></a>
-						</div>
-						
-						<a class="previous_arrow" onclick="PlusSlides('project1_gallery', -1)">&#10094;</a>
-						<a class="next_arrow" onclick="PlusSlides('project1_gallery', 1)">&#10095;</a>
-					</div>
 					
-					<div class="text" style="padding-left: 10px; width: 40%;">
+						<div class="slides fade">
+							<a href="#ept_content" onclick="ShowContent('ept_content')"><img src="Images/ept_1.jpg"></a>
+							<div class="caption">Epic Punch Through</div>
+						</div>
 						
-						<p>This is the first project</p>
+						<div class="slides fade">
+							<a href="#hack_content" onclick="ShowContent('hack_content')"><img src="Images/hacking_prototype_1.jpg"></a>
+							<div class="caption">N.A.C OS</div>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#fallen_content" onclick="ShowContent('fallen_content')"><img src="Images/fallen_1.jpg"></a>
+							<div class="caption">We are not the Fallen</div>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#tumble_content" onclick="ShowContent('tumble_content')"><img src="Images/tumble_1.jpg"></a>
+							<div class="caption">TumbleLife</div>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#" onclick="ShowContent('steppes_content')"><img src="Images/steppes_1.jpg"></a>
+							<div class="caption">Steppes</div>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#terrain_content" onclick="ShowContent('terrain_content')"><img src="Images/terrain_1.jpg"></a>
+							<div class="caption">Genetic Algorithm Terrain Generator</div>
+						</div>
+						
+						<div class="slides fade">
+							<a href="#destroyer_content" onclick="ShowContent('destroyer_content')"><img src="Images/destroyer_1.jpg"></a>
+							<div class="caption">Destroyer Command</div>
+						</div>
+						
+						<a class="previous_arrow" onclick="PlusSlides('gallery1', -1)">&#10094;</a>
+						<a class="next_arrow" onclick="PlusSlides('gallery1', 1)">&#10095;</a>
 					</div>
 					
 					<div style="clear: both;"></div>
 				</div>
 			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('incantorium_content')">Incantorium
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="incantorium_content" style="display: none;">
+					<img src="Images/incantorium_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 4%; width: 40%;">
+						
+						<p>Incantorium was my first VR project. The player character is trapped in a study-like room and must attempt to escape using <b>magic</b> they learn. While the tutorial aspects of the game were not completed, the room has a couple puzzles to solve in order to open the final door
+								and escape. Most props can be <b>interacted</b> with and munipulated in VR. This includes being able to pick up and throw objects, lighting candles by touching wicks together and extinguishing candles by making a pinching motion on the wicks. Most <b>models and art</b> were done
+								by hand.</p>
+						
+						<ul>
+							<li>Unity Engine</li>
+							<li><b>Oculus Rift</b> and <b>Steam VR</b> project</li>
+							<li>Puzzle Solving</li>
+							<li>Escape Room</li>
+							<li><b>Gesture</b> and prop based magic system</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Github: <a href="https://github.com/qdoyonnas/Incantorium" target="_blank">Project</a></p>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('ept_content')">Epic Punch Through
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="ept_content" style="display: none;">
+					<img src="Images/ept_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 4%; width: 40%;">
+						
+						<p>Epic Punch Through is an on going <b>passion project</b>. It is the first installment of a series of games in the V-Souls universe. Each game is planned to be more expansive and ambitions than the last. EPT is merely a <b>score attack</b> game while
+								the sequels will have RPG mechanics and over-world style travelling, as well as unique storylines.
+								The primary purpose of EPT is a test for the <b>combat mechanics</b> and therefore is primarily centered on this feature.</p>
+						<ul>
+							<li>Unity Engine</li>
+							<li>Solo-project</li>
+							<li>Advanced Particle Controllers</li>
+							<li>Workaround of Unity physics to allow <b>multi-layer collisions</b></li>
+							<li>Robust architecture allowing effecient work flow</li>
+							<li>Menu System using <b>decorator pattern</b></li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Github: <a href="https://github.com/qdoyonnas/EpicPunchThrough" target="_blank">Project</a></p>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('hack_content')">N.A.C OS
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="hack_content" style="display: none;">
+					<img src="Images/hacking_prototype_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>Started during a <b>game jam</b> themed around connection, N.A.C OS is a <b>hacking simulator</b>. It simulates an abstract network of nodes. Players are tasked with exploring this network and disconnecting their rivals. They do this by entering commands into a console,
+								which are then <b>interpreted and executed</b>. With this players can write simple scripts inside the node to serve as <b>automated programs</b> for attack and defense.</p>
+								
+						<ul>
+							<li>Unity Engine</li>
+							<li><b>Text-parsing</b> using regular expressions</li>
+							<li>Automated camera using <b>tweening</b></li>
+							<li>Text to number conversion system to allow any word to be evaluated as a unique number</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Github: <a href="https://github.com/qdoyonnas/HackingPrototype" target="_blank">Project</a></p>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('fallen_content')">We are not the Fallen
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="fallen_content" style="display: none;">
+					<img src="Images/fallen_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>We are not the Fallen was a <b>quick side project</b> made functional in under a week. Players use their powerful jumps and the <b>physics</b> of falling debris in order to climb as high as possible. <b>Collisions</b> between debris cause powerful screen shake and particle explosions
+								which can catch the unwary player, ending their run.</p>
+							
+						<ul>
+							<li>Unity Engine</li>
+							<li>Physics based gameplay</li>
+							<li>Addicting <b>gameplay-loop</b></li>
+							<li>High-performance 4-directional <b>endless</b> generation</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Github: <a href="https://github.com/qdoyonnas/We-are-not-the-Fallen" target="_blank">Project</a></p>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('tumble_content')">TumbleLife
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="tumble_content" style="display: none;">
+					<img src="Images/tumble_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>Made in the space of a <b>few days</b> as an alternative assignment for an art class. TumbleLife sees players stacking blocks using <b>physics</b> on a small platform. The amount of time the player can 'keep it altogether' is counted as score.
+								Blocks are contrained to work on a 2d plane though the game is presented in three dimensions.</p>
+								
+						<ul>
+							<li>Unity Engine</li>
+							<li>Physics based interaction</li>
+							<li>Displays rigid physics and <b>contraints</b></li>
+							<li>Improved Unity physics collision detection to avoid glitches</li>
+							<li>Complete gameplay loop</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Github: <a href="https://github.com/qdoyonnas/TumbleLife" target="_blank">Project</a></p>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('steppes_content')">Steppes
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="steppes_content" style="display: none;">
+					<img src="Images/steppes_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>Made using <b>self-taught</b> Python programming. Steppes is a visual poem depicting a soldier's final moments. Most of the art is <b>handmade</b>, as is the music track.</p>
+						
+						<ul>
+							<li>Python</li>
+							<li><b>Music track</b> made using synthetic music program</li>
+							<li>Most art is handmade</li>
+							<li><b>Branching interactions</b>, providing different 'endings' to the poem</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('terrain_content')">Genetic Algorithm Terrain Generator
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body"  id="terrain_content" style="display: none;">
+					<img src="Images/terrain_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>Simple terrain generator using a <b>genetic algorithm</b>. The program is provided with a number of tiles (sand, forest, water, ice etc) and certain rules on what the world should be composed of. The GA will then attempt to generate a world
+								that matches these criteria. Educational project on the subject of GA and what to use, or not use, them in.</p>
+						
+						<ul>
+							<li>Genetic Algorithm</li>
+							<li>Terrain Generation</li>
+							<li>Windows Forms and .NET interface</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Github: <a href="https://github.com/qdoyonnas/GATerrainGenerator" target="_blank">Project</a></p>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="project">
+				<h1 onclick="ToggleContent('destroyer_content')">Destroyer Command
+					<div class="collapse_arrow">&#9660;</div>
+					<div class="collapse_arrow right">&#9660;</div>
+				</h1>
+			
+				<div class="project_body" id="destroyer_content" style="display: none;">
+					<img src="Images/destroyer_1.jpg" width="52%">
+					
+					<div class="text" style="padding-left: 10px; width: 40%;">
+						
+						<p>First project every created. Used to <b>self-teach</b> Python. Heavily inspired by Missile Command, players take control of spaceships and attempt to eliminate each other. Heavily <b>iterated</b> eventually including a 'shipyard' menu, and simulated heat-detection mechanics.</p>
+						
+						<ul>
+							<li>Python - pygame</li>
+							<li>Missile Command inspired</li>
+							<li>Self-taught programming</li>
+							<li>Functional menus and gameplay loop</li>
+							<li>Enemy ship <b>AI</b> that is a challenge to players without cheating</li>
+						</ul>
+						
+						<h2></br>Links:</h2>
+						<p>Download: Coming Soon</p>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
 		</div>
 		
-		<div class="content resume-content">
+		<div class="content resume-content" style="display: none">
 			<h1 style="text-align: center">Resume</h1>
+			
+			<h2>PROFESSIONAL EXPERIENCE</h2>
+			<table style="width: 100%">
+				<tr>
+					<td><b><u>Software Developer</u></b>, Tapcentive</td>
+					<td style="text-align: right">April 2014 - August 2018</td>
+				</tr>
+				<tr>
+					<td><ul style="margin: 0">
+						<li>Worked as a full-stack engineer both as a team member and as an independent contributor on a variety of projects</li>
+						<li>Responsible for <b>design. development and tests</b>, both unit and end-to-end</li>
+						<li>Involved in sprint planning, code review, and architectural reviews</li>
+						<li>Back-end: including <b>database, server, and REST APIs</b> for card managment and promotional platform (Python, Django, MongoDB, PostgreSQL)</li>
+						<li>Front-end: Web app development of management and reporting interface for card management and promotional platform (HTML, Javascript, CSS, Backbone.js, Bootstrap)</li>
+						<li>Ported Pirate's Gold Instant Ticket Game UI to HTML5/Javascript and Phaser and enhanced game experience with additional effects and animations</li>
+						<li>Developed custom Web-based puzzle game for promotional platform</li>
+						<li><b>Cross-platform mobile development</b> using Ionic and Cordova to create game app that used NFC to control the game experience and outcomes. Integrated the Pirate's Gold game into the app</li>
+					</ul></td>
+				</tr>
+			</table>
+			
+			<h2>PROJECTS</h2>
+			<table style="width: 100%">
+				<tr>
+					<td><b><u>Cyberwar Simulation</u></b>, New England Naval War College - Contract</td>
+					<td style="text-align: right">May 2017</td>
+				</tr>
+				<tr>
+					<td><ul style="margin: 0">
+						<li>Small team prototype creation of Cyberwar Simulation for use in training officers at Naval War College.</li>
+						<li>Open-ended research and development project, designing and developing of prototype to employer specifications.</li>
+						<li>Re-iteration process from employer feedback for tailored final product.</li>
+					</ul></td>
+				</tr>
+				
+				<tr><td><br></td></tr>
+				<tr>
+					<td><b><u>Additional Projects</u></b></td>
+				</tr>
+				<tr>
+					<td><ul style="margin: 0">
+						<li>Bachelor's Final Project – VR action game</li>
+						<li>Incantorium – VR Puzzle game</li>
+						<li>Epic Punch Through – Unity based Personal project</li>
+						<li>Destroyer Command – Initially Pygame project, self-taught Python</li>
+						<li>Multiple <b>Game Jams</b></li>
+					</ul></td>
+				</tr>
+			</table>
+			
 			<h2>SUMMARY OF SKILLS</h2>
 			<p>Experienced software developer and avid gamer with strong skills in C#, C++, Python, and HTML. Able to quickly learn and apply new training and technologies.  Friendly, positive employee who collaborates well with a dynamic team. Self-taught programming at age 12 before taking classes. Excellent written and verbal communication skills. </p>
 			
@@ -181,54 +472,9 @@
 					<td style="text-align: right">2011</td>
 				</tr>
 			</table>
-			
-			<h2>PROFFESIONAL EXPERIENCE</h2>
-			<table style="width: 100%">
-				<tr>
-					<td><b><u>Web, Database and Mobile Developer</u></b>, Tapcentive - Telecommute</td>
-					<td style="text-align: right">April 2014 - August 2018</td>
-				</tr>
-				<tr>
-					<td><ul style="margin: 0">
-						<li>Collaborated virtually with California based team, setting own schedule in order to complete assignments, and accurately recording and reporting hours.</li>
-						<li>Developed website using HTML/CSS/JQUERY. Rapidly learned and applied new skills including: working with NGINX, Bootstrap.js, Git, MongoDB, Underscore.js.</li>
-						<li>Worked on Android side, working on end-to-end connectivity using Ionic and Cordova.</li>
-						<li>Switched between multiple programming environments including Python venv, Node.js and Django.</li>
-					</ul></td>
-				</tr>
-			</table>
-			
-			<h2>PROJECTS</h2>
-			<table style="width: 100%">
-				<tr>
-					<td><b><u>Cyberwar Simulation</u></b>, New England Naval War College - Contract</td>
-					<td style="text-align: right">May 2017</td>
-				</tr>
-				<tr>
-					<td><ul style="margin: 0">
-						<li>Small team prototype creation of Cyberwar Simulation for use in training officers at Naval War College.</li>
-						<li>Open-ended research and development project, designing and developing of prototype to employer specifications.</li>
-						<li>Re-iteration process from employer feedback for tailored final product.</li>
-					</ul></td>
-				</tr>
-				
-				<tr><td><br></td></tr>
-				<tr>
-					<td><b><u>Additional Projects</u></b></td>
-				</tr>
-				<tr>
-					<td><ul style="margin: 0">
-						<li>Bachelor's Final Project – VR action game</li>
-						<li>Incantorium – VR Puzzle game</li>
-						<li>Epic Punch Through – Unity based Personal project</li>
-						<li>Destroyer Command – Initially Pygame project, self-taught Python</li>
-						<li>Multiple <b>Game Jams</b></li>
-					</ul></td>
-				</tr>
-			</table>
 		</div>
 		
-		<div class="content contact-content">
+		<div class="content contact-content" style="display: none">
 			<h1>Contact Info</h1>
 			<p><b>Email: </b>qdoyonnas@gmail.com</p>
 			<p><b>Phone: </b>(860)694-9114</p>
